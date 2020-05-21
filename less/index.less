@@ -89,8 +89,9 @@ body{
 
 #top-nav {
 
-	padding: 0;
-	margin-bottom: 20px;
+	padding-bottom: 10p;
+	width: 95%;
+	margin-right: 0 auto;
 	
 
 	a:link {
@@ -113,7 +114,8 @@ body{
 
 .profile-grid {
 	display: grid;
-	width: 100%;
+	width: 90%;
+	margin: 0 auto;
 	grid-template-columns: 35% 60%;
 	background: white;
 	height: 700px;
@@ -136,4 +138,31 @@ body{
 		line-height: 1.3em;
 	}
 
+}
+
+.bottom-section {
+	display: grid;
+	width: 90%;
+	margin: 0 auto;
+	grid-template-columns: 1fr 1fr;
+	background: white;
+	height: 700px;
+	padding: 30px;
+	grid-gap: 5em;
+
+	h1, h2 {
+		.headings
+	}
+
+	p, li {
+		.paragraphs
+	}
+	
+	div {
+		padding: 5em;
+	}
+
+	ul {
+		list-style-type: square;
+	}
 }
