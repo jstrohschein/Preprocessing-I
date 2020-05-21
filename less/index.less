@@ -55,5 +55,85 @@ table {
 
 html, body {
 		height: 100%;
+		font-size: 62.5%;
 }
 
+* {
+	//outline: 1px solid black;
+	box-sizing: border-box;
+}
+
+@background-color: #d3d3d3;
+@font: helvetica;
+@h1-color: black;
+
+.paragraphs {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.4rem;
+	line-height: 1.5em;
+}
+
+.headings {
+	font-size: 3rem;
+	font-family: rockwell;
+	padding-bottom: 35px;
+}
+
+body{
+	background:@background-color;
+	font-family: @font;
+	margin: 15px;
+	font-weight: 500;
+}
+
+
+#top-nav {
+
+	padding: 0;
+	margin-bottom: 20px;
+	
+
+	a:link {
+		color: black;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+		font-size: 1.6rem;
+		padding: 15px;
+		text-decoration: none;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+}
+
+.profile-grid {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 35% 60%;
+	background: white;
+	height: 700px;
+	padding: 30px;
+	
+	img {
+		height: 600px;
+		width: 400px;
+	}
+
+	h1, h2 { 
+		.headings
+	}
+
+	p, li {
+		.paragraphs
+	}
+
+	#about {
+		line-height: 1.3em;
+	}
+
+}
