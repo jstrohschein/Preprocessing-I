@@ -1,1 +1,286 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+}
+.paragraphs {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+}
+.headings {
+  font-size: 3rem;
+  font-family: rockwell;
+  padding-bottom: 35px;
+}
+body {
+  background: #d3d3d3;
+  font-family: helvetica;
+  margin: 15px;
+  font-weight: 500;
+  height: 100%;
+}
+#top-nav {
+  padding-bottom: 10p;
+  width: 95%;
+  margin-right: 0 auto;
+}
+#top-nav a:link {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  font-size: 1.6rem;
+  padding: 15px;
+  text-decoration: none;
+}
+#top-nav nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.profile-grid {
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  grid-template-columns: 35% 60%;
+  grid-gap: 3rem;
+  background: white;
+  height: 70%;
+  padding: 30px;
+}
+.profile-grid .pic {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0.7rem 0.5rem 0.5rem gray;
+}
+.profile-grid img {
+  height: 100%;
+  width: 100%;
+}
+.profile-grid div {
+  display: grid;
+}
+.profile-grid h1,
+.profile-grid h2 {
+  font-size: 3rem;
+  font-family: rockwell;
+  padding-bottom: 35px;
+}
+.profile-grid p,
+.profile-grid li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+}
+.profile-grid #about {
+  line-height: 1.3em;
+}
+.bottom-section {
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  background: white;
+  height: 100%;
+  padding: 30px;
+  grid-gap: 5em;
+}
+.bottom-section h1,
+.bottom-section h2 {
+  font-size: 3rem;
+  font-family: rockwell;
+  padding-bottom: 35px;
+}
+.bottom-section p,
+.bottom-section li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+}
+.bottom-section div {
+  padding: 5em;
+  box-shadow: 0.7rem 0.5rem 0.5rem gray;
+}
+.bottom-section ul {
+  list-style-type: square;
+}
+.contacts {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.contacts .contact-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5em;
+}
+.contacts .handles {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 1200px) {
+  .profile-grid {
+    height: auto;
+  }
+  .education {
+    margin: 0 auto;
+  }
+  .bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    height: auto;
+  }
+  .bottom-section div {
+    margin-top: 2rem;
+  }
+  .pic {
+    height: 50%;
+  }
+  .profile-grid img {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
